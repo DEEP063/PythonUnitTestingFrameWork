@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-04-30 16:04:57</p>
+                <p class='attribute'><strong>Duration: </strong>14.62 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 1, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.Login_test</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_sauce</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_sauce1</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="react-burger-menu-btn"]"}
+  (Session info: chrome=100.0.4896.127)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00CB7413+2389011]
+	Ordinal0 [0x00C49F61+1941345]
+	Ordinal0 [0x00B3C658+837208]
+	Ordinal0 [0x00B691DD+1020381]
+	Ordinal0 [0x00B6949B+1021083]
+	Ordinal0 [0x00B96032+1204274]
+	Ordinal0 [0x00B84194+1130900]
+	Ordinal0 [0x00B94302+1196802]
+	Ordinal0 [0x00B83F66+1130342]
+	Ordinal0 [0x00B5E546+976198]
+	Ordinal0 [0x00B5F456+980054]
+	GetHandleVerifier [0x00E69632+1727522]
+	GetHandleVerifier [0x00F1BA4D+2457661]
+	GetHandleVerifier [0x00D4EB81+569713]
+	GetHandleVerifier [0x00D4DD76+566118]
+	Ordinal0 [0x00C50B2B+1968939]
+	Ordinal0 [0x00C55988+1989000]
+	Ordinal0 [0x00C55A75+1989237]
+	Ordinal0 [0x00C5ECB1+2026673]
+	BaseThreadInitThunk [0x76116739+25]
+	RtlGetFullPathName_UEx [0x77BA8E7F+1215]
+	RtlGetFullPathName_UEx [0x77BA8E4D+1165]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\SAI-PC\PycharmProjects\UnittestFramework\Project\demo\tests\login.py", line 32, in test_sauce1
+    home.logout()
+  File "C:\Users\SAI-PC\PycharmProjects\UnittestFramework\Project\demo\PageObject\homepage.py", line 14, in logout
+    self.driver.find_element(By.ID, self.hamburger_menu_button_id).click()
+  File "C:\Users\SAI-PC\PycharmProjects\UnittestFramework\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1248, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\SAI-PC\PycharmProjects\UnittestFramework\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 425, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\SAI-PC\PycharmProjects\UnittestFramework\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="react-burger-menu-btn"]"}
+  (Session info: chrome=100.0.4896.127)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00CB7413+2389011]
+	Ordinal0 [0x00C49F61+1941345]
+	Ordinal0 [0x00B3C658+837208]
+	Ordinal0 [0x00B691DD+1020381]
+	Ordinal0 [0x00B6949B+1021083]
+	Ordinal0 [0x00B96032+1204274]
+	Ordinal0 [0x00B84194+1130900]
+	Ordinal0 [0x00B94302+1196802]
+	Ordinal0 [0x00B83F66+1130342]
+	Ordinal0 [0x00B5E546+976198]
+	Ordinal0 [0x00B5F456+980054]
+	GetHandleVerifier [0x00E69632+1727522]
+	GetHandleVerifier [0x00F1BA4D+2457661]
+	GetHandleVerifier [0x00D4EB81+569713]
+	GetHandleVerifier [0x00D4DD76+566118]
+	Ordinal0 [0x00C50B2B+1968939]
+	Ordinal0 [0x00C55988+1989000]
+	Ordinal0 [0x00C55A75+1989237]
+	Ordinal0 [0x00C5ECB1+2026673]
+	BaseThreadInitThunk [0x76116739+25]
+	RtlGetFullPathName_UEx [0x77BA8E7F+1215]
+	RtlGetFullPathName_UEx [0x77BA8E4D+1165]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 1, Error: 1 -- Duration: 14.62 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
